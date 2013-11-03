@@ -1,0 +1,32 @@
+<testcase xmlns="http://www.jazzteam.org/Routines" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	name="Google translate test"
+	description="Translates specified text using google translate, then listen"
+	tags="Example, popular services">
+	<test coverage="100" name="Text translate example"
+		description="Set up language for specified text and for translated text. Enter text, check translation."
+		tags="google-translate, navigate, webelement, field, button, pause">
+		<navigate to="http://translate.google.com/?hl=en" />
+		<pause time="2000" />
+		<!-- Set up english -->
+		<webelement id="gt-sl-gms" action="click" />
+		<pause time="2000" />
+		<webelement id=":j" action="click" />
+		<webelement
+			xpath="//div[@id='gt-sl-sugg']/div[@aria-pressed='true'][@value='en']"
+			action="isContainsText" text="English" />
+		<!-- Set up russian -->
+		<webelement id="gt-tl-gms" action="click" />
+		<pause time="2000" />
+		<webelement id=":3l" action="click" />
+		<webelement
+			xpath="//div[@id='gt-tl-sugg']/div[@aria-pressed='true'][@value='ru']"
+			action="isContainsText" text="Russian" />
+		<!-- Enter text and translate -->
+		<field id="source" textToType="Hello, world" />
+		<button id="gt-ft-res" />
+		<webelement xpath="//span[@id='result_box']/span" action="isContainsText"
+			text="Привет, мир" />
+		<webelement xpath="//div[@id='gt-res-listen']/span" action="click" />
+		<pause time="2000" />
+	</test>
+</testcase>

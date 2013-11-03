@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<project
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+        xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>xml2selenium</artifactId>
+        <groupId>org.jazzteam</groupId>
+        <version>1.20-SNAPSHOT</version>
+    </parent>
+    <packaging>jar</packaging>
+
+    <artifactId>xml2selenium-sample-project</artifactId>
+    <properties>
+        <skip-testcases>false</skip-testcases>
+    </properties>
+
+    <dependencies>
+        <!-- Framework dependencies -->
+        <dependency>
+            <groupId>org.jazzteam</groupId>
+            <artifactId>xml2selenium-core</artifactId>
+        </dependency>
+        <!-- All native framework tags -->
+        <dependency>
+            <groupId>org.jazzteam</groupId>
+            <artifactId>xml2selenium-base-tag</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jazzteam</groupId>
+            <artifactId>xml2selenium-base-plugin</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jazzteam</groupId>
+            <artifactId>xml2selenium-config</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.jazzteam</groupId>
+            <artifactId>xml2selenium-helper-lib</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>xmlunit</groupId>
+            <artifactId>xmlunit</artifactId>
+            <version>1.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.skyscreamer</groupId>
+            <artifactId>jsonassert</artifactId>
+            <version>1.2.0</version>
+        </dependency>
+    </dependencies>
+</project>
