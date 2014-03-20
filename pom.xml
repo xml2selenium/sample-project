@@ -8,10 +8,10 @@
 	<artifactId>xml2selenium-sample-project</artifactId>
 	<groupId>org.jazzteam</groupId>
 	<version>1.0-SNAPSHOT</version>
-	<packaging>jar</packaging>	
-	
+	<packaging>jar</packaging>
+
 	<properties>
-		<xml2selenium.version>1.20-SNAPSHOT</xml2selenium.version>
+		<xml2selenium.version>1.26</xml2selenium.version>
 	</properties>
 
 	<dependencies>
@@ -44,4 +44,14 @@
 			<version>4.10</version>
 		</dependency>
 	</dependencies>
+	<repositories>
+		<repository>
+			<id>x2s</id>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<name>XML2Selenium</name>
+			<url>https://dev.jazzteam.org:2443/nexus/content/repositories/xml2selenium</url>
+		</repository>
+	</repositories>
 </project>
