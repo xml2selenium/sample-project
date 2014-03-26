@@ -1,4 +1,5 @@
 <testcase xmlns="http://www.jazzteam.org/Routines" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.jazzteam.org/Routines http://xml2selenium.com/schema/xml2selenium.xsd"
 	name="Google translate test"
 	description="Translates specified text using google translate, then listen"
 	tags="Example, popular services">
@@ -17,7 +18,7 @@
 		<!-- Set up russian -->
 		<webelement id="gt-tl-gms" action="click" />
 		<pause time="2000" />
-		<webelement id=":3l" action="click" />
+		<webelement id=":40" action="click" />
 		<webelement
 			xpath="//div[@id='gt-tl-sugg']/div[@aria-pressed='true'][@value='ru']"
 			action="isContainsText" text="Russian" />
@@ -25,8 +26,6 @@
 		<field id="source" textToType="Hello, world" />
 		<button id="gt-ft-res" />
 		<webelement xpath="//span[@id='result_box']/span" action="isContainsText"
-			text="Привет, мир" />
-		<webelement xpath="//div[@id='gt-res-listen']/span" action="click" />
-		<pause time="2000" />
+			text="Привет, мир" />				
 	</test>
 </testcase>
