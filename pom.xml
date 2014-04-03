@@ -11,7 +11,7 @@
 	<packaging>jar</packaging>
 
 	<properties>
-		<xml2selenium.version>1.26</xml2selenium.version>
+		<xml2selenium.version>1.27</xml2selenium.version>
 	</properties>
 
 	<dependencies>
