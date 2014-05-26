@@ -1,19 +1,14 @@
 <?xml version="1.0"?>
-<project
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
 	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-
 	<modelVersion>4.0.0</modelVersion>
-
 	<artifactId>xml2selenium-sample-project</artifactId>
 	<groupId>org.jazzteam</groupId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
-
 	<properties>
-		<xml2selenium.version>1.27</xml2selenium.version>
+		<xml2selenium.version>1.29</xml2selenium.version>
 	</properties>
-
 	<dependencies>
 		<!-- Framework dependencies -->
 		<dependency>
@@ -37,6 +32,12 @@
 			<artifactId>xml2selenium-config</artifactId>
 			<version>${xml2selenium.version}</version>
 		</dependency>
+		<!-- Helper-lib dependencies -->
+		<dependency>
+		   <groupId>org.jazzteam</groupId>
+		   <artifactId>xml2selenium-helper-lib</artifactId>
+		   <version>${xml2selenium.version}</version>
+		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -51,7 +52,7 @@
 				<enabled>false</enabled>
 			</snapshots>
 			<name>XML2Selenium</name>
-			<url>https://dev.jazzteam.org:2443/nexus/content/repositories/xml2selenium</url>
+			<url>http://dev.jazzteam.org:8081/nexus/content/repositories/xml2selenium</url>
 		</repository>
 	</repositories>
 </project>
